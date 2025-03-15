@@ -1,2 +1,2 @@
-print("ade");
-hjfuufhuf
+print('Ade')
+input("name")
