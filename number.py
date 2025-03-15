@@ -4,8 +4,19 @@ def add(a,b,c):
 def mult(a,b,c):
     z = a * b * c
     print("number one {0} number two {1} number three {2} multiplication {3}".format(a,b,c,z));
+
+def hcf1(a,b):
+    x = a
+    y = b
+    while y != 0 :
+        z = x % y
+        x=y
+        y=z
+    return x
 def hcf(a,b,c):
-    hcf1 (a,b);
+    h1=  hcf1 (a,b)
+    h2 = hcf1(h1, c)
+    print("the HCF is", h2)
 def largest(a,b,c):
     if a > b: 
         large = a
