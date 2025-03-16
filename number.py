@@ -49,3 +49,5 @@ mult(num1, num2, num3);
 largest(num1, num2, num3);
 smallest(num1, num2, num3);
 hcf(num1, num2, num3);
+
+#lcm, modulus of 3 numbers, x^y^z raise the power6r
