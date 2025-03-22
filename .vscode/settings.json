@@ -1,4 +1,5 @@
 {
     "files.autoSave": "afterDelay",
-    "editor.defaultFormatter": "njpwerner.autodocstring"
+    "editor.defaultFormatter": "njpwerner.autodocstring",
+    "editor.fontSize": 16
 }
