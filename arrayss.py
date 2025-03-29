@@ -22,7 +22,7 @@ def binarySearch(arr, n, Item):
         location = middle
         print('{0} is found at {1}'.format(Item, location))
     else:
-        print('Item is found: ')
+        print('Item is not found: ')
     
     
     
