@@ -1,10 +1,10 @@
 import math
 arr=[]
 def maximum(arr,n):
-    maxi  = a[0]
+    maxi  = arr[0]
     for i in range(n):
-        if a[i]>maxi:
-            maxi=a[i]
+        if arr[i]>maxi:
+            maxi=arr[i]
     return maxi
 n = input("array length: ")
 n = int(n)
@@ -31,4 +31,4 @@ print("average in 2 decimal places is ", ave)
 print("standard deviation in 3 decimal places is ", sd)
 print("addition ", suma)
 max= maximum(arr,n)
-print('maximum is :', maxi)
+print('maximum is :', max)
