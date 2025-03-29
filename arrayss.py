@@ -15,7 +15,7 @@ def minimum(arr,n):
 n = input("array length: ")
 n = int(n)
 for i in range(n):
-    val = input('enter value: %d' %i)
+    val = input('enter value: %d ' %i)
     val = int(val)
     arr.append(val)
 print(arr)
@@ -40,3 +40,12 @@ max= maximum(arr,n)
 print('maximum is :', max)
 min= minimum(arr,n)
 print('minimum is :', min)
+for i in range(n):
+    for j in range(n - 1):
+        if a[j]>a[j+1]:
+            temp = a[j]
+            a[j] = a[j + 1]
+            a[j+1]=temp
+print()
+print('sorted')
+print(a)
