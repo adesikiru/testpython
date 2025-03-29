@@ -6,6 +6,12 @@ def maximum(arr,n):
         if arr[i]>maxi:
             maxi=arr[i]
     return maxi
+def minimum(arr,n):
+    mini  = arr[0]
+    for i in range(n):
+        if arr[i]<mini:
+            mini=arr[i]
+    return mini
 n = input("array length: ")
 n = int(n)
 for i in range(n):
@@ -32,3 +38,5 @@ print("standard deviation in 3 decimal places is ", sd)
 print("addition ", suma)
 max= maximum(arr,n)
 print('maximum is :', max)
+min= minimum(arr,n)
+print('minimum is :', min)
