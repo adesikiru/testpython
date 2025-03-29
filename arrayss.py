@@ -1,5 +1,11 @@
 import math
 arr=[]
+def maximum(arr,n):
+    maxi  = a[0]
+    for i in range(n):
+        if a[i]>maxi:
+            maxi=a[i]
+    return maxi
 n = input("array length: ")
 n = int(n)
 for i in range(n):
@@ -24,3 +30,5 @@ ave = '{0:.02f}'.format(ave)
 print("average in 2 decimal places is ", ave)
 print("standard deviation in 3 decimal places is ", sd)
 print("addition ", suma)
+max= maximum(arr,n)
+print('maximum is :', maxi)
