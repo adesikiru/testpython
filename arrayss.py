@@ -42,10 +42,10 @@ min= minimum(arr,n)
 print('minimum is :', min)
 for i in range(n):
     for j in range(n - 1):
-        if a[j]>a[j+1]:
-            temp = a[j]
-            a[j] = a[j + 1]
-            a[j+1]=temp
+        if arr[j]>arr[j+1]:
+            temp = arr[j]
+            arr[j] = arr[j + 1]
+            arr[j+1]=temp
 print()
 print('sorted')
-print(a)
+print(arr)
