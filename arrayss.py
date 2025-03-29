@@ -1,5 +1,31 @@
 import math
 arr=[]
+def mediann(arr, n):
+    len = n
+    med = 0.0
+    if len % 2 ==0:
+        med=(arr[(len//2-1)]+arr[(len//2)])/2
+    else: med = arr[(len//2)]
+    print("median is: ", med)
+def binarySearch(arr, n, Item):
+    location = 1
+    i=0
+    j=n-1
+    middle=(i+j)//2
+    while (i < j):
+        if Item < arr[middle]:
+            j = middle - 1
+        else: 
+            i = middle + 1
+        middle = (i+j)//2
+    if arr[middle] == Item:
+        location = middle
+        print('{0} is found at {1}'.format(Item, location))
+    else:
+        print('Item is found: ')
+    
+    
+    
 def maximum(arr,n):
     maxi  = arr[0]
     for i in range(n):
@@ -49,3 +75,9 @@ for i in range(n):
 print()
 print('sorted')
 print(arr)
+print()
+mediann(arr, n)
+print()
+Item = input('enter item to be searched: ')
+Item = int(Item)
+binarySearch(arr,n, Item)
